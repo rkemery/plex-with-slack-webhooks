@@ -31,11 +31,9 @@ sudo yum install python3 python3-pip
 ### 2. Clone the Repository
 
 ```
-git clone https://github.com/YOUR_GITHUB_USERNAME/plex-to-slack.git
+git clone https://github.com/rkemery/plex-to-slack.git
 cd plex-to-slack
 ```
-
-Replace `YOUR_GITHUB_USERNAME` with your actual GitHub username.
 
 ### 3. Install Required Libraries
 
