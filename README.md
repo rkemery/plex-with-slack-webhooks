@@ -31,7 +31,7 @@ sudo yum install python3 python3-pip
 ### 2. Clone the Repository
 
 ```
-git clone https://github.com/rkemery/plex-to-slack.git
+git clone https://github.com/rkemery/plex-with-slack-webhooks.git
 cd plex-to-slack
 ```
 
