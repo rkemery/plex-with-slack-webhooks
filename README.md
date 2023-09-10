@@ -32,7 +32,7 @@ sudo yum install python3 python3-pip
 
 ```
 git clone https://github.com/rkemery/plex-with-slack-webhooks.git
-cd plex-to-slack
+cd plex-with-slack-webhooks
 ```
 
 ### 3. Install Required Libraries
