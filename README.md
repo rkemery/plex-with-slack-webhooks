@@ -52,7 +52,7 @@ SLACK_WEBHOOK_URL = 'YOUR_SLACK_WEBHOOK_URL'
 ### 5. Run the Script
 
 ```
-python3 your_script_name.py
+python3 plex.py
 ```
 
 ## Setting up as a Systemd Service
@@ -74,7 +74,7 @@ After=network.target
 Type=simple
 User=YOUR_USERNAME
 WorkingDirectory=/path/to/script/directory
-ExecStart=/usr/bin/python3 /path/to/your/script.py
+ExecStart=/usr/bin/python3 /path/to/your/plex.py
 Restart=always
 
 [Install]
@@ -101,7 +101,7 @@ sudo systemctl enable plex_to_slack
 To run the script in verbose mode and see detailed logs, use the `-verbose` flag:
 
 ```
-python3 your_script_name.py -verbose
+python3 plex.py -verbose
 ```
 
 ## License
