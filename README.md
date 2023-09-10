@@ -17,57 +17,57 @@ For more details on Plex's webhook feature, refer to their [official documentati
 
 #### On Ubuntu/Debian:
 
-\```
+```
 sudo apt update
 sudo apt install python3 python3-pip
-\```
+```
 
 #### On CentOS:
 
-\```
+```
 sudo yum install python3 python3-pip
-\```
+```
 
 ### 2. Clone the Repository
 
-\```
+```
 git clone https://github.com/YOUR_GITHUB_USERNAME/plex-to-slack.git
 cd plex-to-slack
-\```
+```
 
 Replace `YOUR_GITHUB_USERNAME` with your actual GitHub username.
 
 ### 3. Install Required Libraries
 
-\```
+```
 pip3 install flask requests
-\```
+```
 
 ### 4. Configure the Script
 
 Edit the script to set your Slack incoming webhook URL:
 
-\```python
+```python
 SLACK_WEBHOOK_URL = 'YOUR_SLACK_WEBHOOK_URL'
-\```
+```
 
 ### 5. Run the Script
 
-\```
+```
 python3 your_script_name.py
-\```
+```
 
 ## Setting up as a Systemd Service
 
 1. Create a service file:
 
-\```
+```
 sudo nano /etc/systemd/system/plex_to_slack.service
-\```
+```
 
 2. Add the following content to the service file:
 
-\```
+```
 [Unit]
 Description=Plex to Slack Notification Service
 After=network.target
@@ -81,30 +81,30 @@ Restart=always
 
 [Install]
 WantedBy=multi-user.target
-\```
+```
 
 Replace `YOUR_USERNAME` with your Linux username and adjust the paths accordingly.
 
 3. Reload `systemd` and start the service:
 
-\```
+```
 sudo systemctl daemon-reload
 sudo systemctl start plex_to_slack
-\```
+```
 
 4. To make the service start on boot:
 
-\```
+```
 sudo systemctl enable plex_to_slack
-\```
+```
 
 ## Debugging and Verbose Mode
 
 To run the script in verbose mode and see detailed logs, use the `-verbose` flag:
 
-\```
+```
 python3 your_script_name.py -verbose
-\```
+```
 
 ## License
 
